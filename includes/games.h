@@ -4,5 +4,8 @@
 void lotoFacil();
 void megaSena();
 void quina();
+void lotoMania();
+void duplaSena();
+void timeMania();
 
 #endif

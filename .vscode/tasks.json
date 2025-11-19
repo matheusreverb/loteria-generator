@@ -8,13 +8,12 @@
       "args": [
         "-I", "${workspaceFolder}/includes",
         "${workspaceFolder}/src/main.c",
-        "${workspaceFolder}/src/generate.c",
         "${workspaceFolder}/src/input.c",
         "${workspaceFolder}/src/utils.c",
-        "${workspaceFolder}/src/menu.c",
+        "${workspaceFolder}/src/game-menu.c",
         "${workspaceFolder}/src/start-game.c",
         "${workspaceFolder}/src/games.c",
-        "${workspaceFolder}/src/game_config.c",
+        "${workspaceFolder}/src/game-config.c",
         "-o",
         "${workspaceFolder}/loteria.exe"
       ],

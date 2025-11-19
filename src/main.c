@@ -1,16 +1,17 @@
 #include <stdlib.h>
 
-#include "../includes/menu.h"
-#include "../includes/config.h"
+#include "../includes/game-menu.h"
+#include "../includes/game-config.h"
 
-const char *GAMES[OPTIONS_NUMBERS] = {
-  "MEGASENA",
-  "LOTOFACIL",
-  "QUINA",
-  "SAIR"
+const GameRules *ALL_GAMES[NUM_GAMES] = {
+  &MEGASENA_RULES,
+  &LOTOFACIL_RULES,
+  &QUINA_RULES,
+  &LOTOMANIA_RULES,
+  &DUPLASENA_RULES,
+  &TIMEMANIA_RULES
 };
 
 int main() {
-  const size_t LIMIT = sizeof(GAMES) / sizeof(GAMES[0]);
-  setGame(LIMIT, 0);
+  setGame(ALL_GAMES, GAME_UNSELECTED);
 }

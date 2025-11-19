@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 #include "../includes/start-game.h"
-#include "../includes/game_config.h"
+#include "../includes/game-config.h"
 
 void executeGame(const GameRules *rules) {
   printf("\n**%s**\n", rules->name);
@@ -14,11 +14,20 @@ void executeGame(const GameRules *rules) {
   );
 }
 void megaSena() {
-  executeGame(&MEGA_SENA_RULES);
+  executeGame(&MEGASENA_RULES);
 }
 void lotoFacil() {
   executeGame(&LOTOFACIL_RULES);
 }
 void quina() {
   executeGame(&QUINA_RULES);
+}
+void lotoMania() {
+  executeGame(&LOTOMANIA_RULES);
+}
+void duplaSena() {
+  executeGame(&DUPLASENA_RULES);
+}
+void timeMania() {
+  executeGame(&TIMEMANIA_RULES);
 }

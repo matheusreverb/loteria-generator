@@ -25,11 +25,11 @@ int *setUserLuckyNumbers(int LIMIT, int MIN, int MAX) {
       continue;
     }
     if(input < MIN) {
-      printf("O numero deve ser maior ou igual a 1.\n");
+      printf("O numero deve ser maior ou igual a %d.\n", MIN);
       continue;
     }
     if(input > MAX) {
-      printf("O numero deve ser menor ou igual a 60.\n");
+      printf("O numero deve ser menor ou igual a %d.\n", MAX);
       continue;
     }
     luckyNumbers[luckyNumbersLength] = input;

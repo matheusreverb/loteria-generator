@@ -4,7 +4,6 @@
 
 #include "../includes/utils.h"
 #include "../includes/input.h"
-#include "../includes/generate.h"
 
 void startGame(
   int MIN_NUMBERS,
